@@ -1,0 +1,7 @@
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0 L200 0 L200 300 L100 300 C 100 300, 0 300, 0 200 " style="fill:rgba(0, 160, 230, 1)"/>
+  <path d="M100 100 L200 100 L200 0 " style= "fill:rgba(0,124,175,1)"/>
+  <circle cx="200" cy="200" r="100" style= "fill:rgba(98,19,98,1)"/>
+  <path d="M100 100 L200 100 L200 300 L100 300" style="fill:rgba(61, 2, 56, 1)" />
+  <path d="M100 300 L100 400 L200 300" style="fill:rgba(98,19,98,1)"/>
+</svg>

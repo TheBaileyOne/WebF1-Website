@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+
+html{
+  background-image: url("images/background.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* background-color: #20232B; */
+}
+
+nav{
+  width: 100vw;
+  position: fixed;
+  top:0;
+  z-index: 1;
+
+}
+h1{
+  text-align: center;
+  /* padding: 20px; */
+  padding-top: 1em;
+  color: #F7F3F5;
+  text-shadow: 2px 2px black;
+  font-family: 'Quantico', sans-serif;
+  font-size: 3em;
+
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+nav ul li{
+  display: inline-block;
+  float:left;
+  width: 25vw;
+}
+nav ul li a{
+   display: block;
+   text-align: center;
+   /* line-height: 7vh; */
+   padding: 1em 0;
+   color: #F7F3F5;
+   background: #2B303A;
+   text-decoration: none;
+ }
+
+nav ul li:hover a, nav ul li:focus a {
+    background: #85C8D1; /*blue backround when hovering*/
+  }
+
+nav ul li:hover ul a{
+    background: #EEE5E9;
+    color: #2B303A;
+    /* height: 5vh; */
+    /* line-height: 40px; */
+  }
+nav ul li:hover ul a:hover{
+    background: #85C8D1;
+    color: #fff
+  }
+
+nav ul li ul{
+   display: none;
+ }
+nav ul li ul li {
+   display: block;
+   float: none;
+ }
+
+nav ul li a:hover + .hidden, .hidden:hover{
+   display: block;
+ }
+
+ #footer-logo{
+   height: 2em;
+ }
+
+#temp-pic{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+ .show-menu {
+   color: #F7F3F5;
+   background: #85C8D1;
+   text-align: center;
+   padding:1vh 0;
+   display: none;
+   cursor: pointer;
+   max-height: 10vh;
+   font-size: 4vh;
+   /* max-height: 100vh;
+   overflow-y: auto; */
+
+   }
+   /*input[type=checkbox]{
+     display: none;
+   }*/
+
+   article{
+     margin: 0 auto;
+     background-color: #F7F3F5;
+     padding: 0.1em 1em;
+     max-width: 68em;
+   }
+
+  main{
+    margin: 0 auto;
+  }
+   a{
+     transition: 0.1s;
+   }
+   ol{
+     display: block;
+     padding: 5px;
+     margin-left: 3vw;
+   }
+   video{
+     display: block;
+     margin: 1em auto;
+     max-width: 80%;
+   }
+
+   #topBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 10px; /* Place the button at the bottom of the page */
+      right: 10px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #2B303A; /* Set a background color */
+      color: #F7F3F5; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+    }
+
+    #topBtn:hover {
+        background-color: #D54834;
+    }
+
+  @media screen and (max-width : 74em){
+    article{
+      margin: 0 20px;
+    }
+  }
+  @media screen and (max-width : 700px), screen and (orientation:portrait){
+    html{
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }
+     h1{
+       font-size: 7vh;
+       padding-top: 5vh;
+     }
+     #menu{
+       display: none;
+     }
+     /* .show-menu:hover + #menu{
+       display: block;
+     } */
+     .show-menu:focus + #menu, #menu:hover{
+       display: block;
+     }
+
+     nav ul{
+       position: static;
+     }
+
+     nav ul li, li a{
+       width: 100vw;
+     }
+
+     nav ul li, li a .hidden{
+       width: 100vw;
+     }
+     .show-menu{
+       display: block;
+       text-decoration: none;
+      }
+      video{
+        width: 98%;
+      }
+      /* h1{
+
+      }
+      h2{
+        font-size: 5vh;
+        margin: 0;
+        padding: 0;
+      }
+      h3{
+        font-size: 4vh;
+      }
+      p{
+        font-size: 2.5vh;
+      }
+      li{
+        font-size: 2.5vh;
+      }
+      ul li{
+        font-size: 3vh;
+      }
+      ul li ul li{
+        font-size: 3vh;
+      } */
+
+
+      video{
+        max-width: 100%;
+      }
+      ol{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        margin-left: 3vw;
+      }
+
+
+    }

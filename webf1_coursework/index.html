@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" role="button" class="show-menu" id="show-menu">&#9776; Menu</a>
+      <ul id="menu">
+        <li><a href="./index.html">Home</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li>
+            <a href="dlog.html">&#9660; Discovery Log</a>
+            <ul class="hidden">
+                <li><a href="dlog1.html">Week 1-10</a></li>
+                <li><a href="dlog2.html">Week 11-20</a></li>
+            </ul>
+        </li>
+        <li><a href="litreview.html">Literature Review</a></li>
+        <li><a href="#validation">Validation</a></li>
+      </ul>
+    </nav>
+    <h1> Web Foundations 1</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Welcome</h2>
+      <p>Hello! Welcome to the site made for the University of Portsmouth - Web Foundations 1 coursework
+      <p>Below is a video of a quick tour of this website:
+      <video controls  id="intro-video">
+        <source src="video/video.ogv" type='video/ogv; codecs="theora, vorbis"'><!--</source> -->
+      	<source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'><!--</source> -->
+        <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'><!--</source> -->
+        <track kind="subtitles" srclang="en" src="video/captions.vtt" label="English" default>
+        Sorry, your browser does not support the <code>&lt;video&gt;</code> tag :(
+      </video>
+      <p>Links to validate the pages can either be found at the bottom of each page. To get to the validation links quickly you can press the validation link in the navigation bar.
+    </article>
+    <article id = "validation">
+      <h2>Validation</h2>
+      <p>These links take you to the W3 HTML and CSS validation pages
+      <p><a href="https://validator.w3.org/check/referer" target="_blank">HTML validation</a>
+      <p><a href="http://jigsaw.w3.org/css-validator/check/referer" target="blank">CSS validation</a>
+    </article>
+  </main>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <footer>
+    <p id="left-foot"><img src="images/uop.svg" alt="university of portsmout logo" id="footer-logo">UP878976
+  </footer>
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("topBtn").style.display = "block";
+      } else {
+          document.getElementById("topBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+</body>
+</html>

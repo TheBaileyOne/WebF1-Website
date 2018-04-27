@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discovery Log</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dstyle.css">
+</head>
+<body>
+
+  <header>
+      <nav>
+        <a href="#" role="button" class="show-menu" id="show-menu">&#9776; Menu</a>
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li>
+              <a href="dlog.html">&#9660; Discovery Log</a>
+              <ul class="hidden">
+                  <li><a href="dlog1.html">Week 1-10</a></li>
+                  <li><a href="dlog2.html">Week 11-20</a></li>
+              </ul>
+          </li>
+          <li><a href="litreview.html">Literature Review</a></li>
+          <li><a href="#validation">Validation</a></li>
+        </ul>
+      </nav>
+      <h1> Web Foundations 1</h1>
+    </header>
+
+  <main>
+    <article>
+      <h2>Discovery Log</h2>
+      <p id="fulllog"><a href="dlog.html">Click to go to full discovery log</a>
+        <section>
+          <h3>Week 2</h3>
+          <p>This was the first week of teaching for Web Foundations where a summary of what to expect from the unit was covered.
+          <p>This week we discussed whether or not operating systems are necessary anymore due to the rise in use of cloud storage and devices such as chromebooks.
+          <p>We then went on to discuss what our most useful websites are. I chose <a href ="http://reddit.com" target="_blank">reddit.com</a> because: The website design is clear to understand and there are forums on pretty much anything
+        </section>
+        <section>
+          <h3>Week 3</h3>
+          <p>Where information is collected and what information is collected about us was the topic of this weeks practical.
+          <p>Ths concepts of confidentiality, availability and integrity of information was discussed in the lecture. The key fact learnt in this weeks lecture and practical, was that information is constantly being collected about us and that we need to be cautious of everything. Even simple questions like “where did you go to school” can be used to gain access to lots of personal information.
+          <p>Social engineering is a common technique for gaining information about people. Some key aspects of that being: phishing, tailgating, shoulder surfing, trojans etc.
+        </section>
+        <section>
+          <h3>Week 4</h3>
+          <p>We started working on our literature reviews this week. A literature review is: A formal evaluation of the written academic research on a particular subject. It is important to make sure literature reviews don’t have personal opinions, uncritical summaries and needs to not sound like an essay.
+          <p>Good sources are necessary for a good literature review. Good sources:
+          <ol>
+            <li>Appear in refereed journals</li>
+            <li>Refers to other good sources</li>
+            <li>Written by a known/respected author</li>
+          </ol>
+        </section>
+        <section>
+          <h3>Week 5</h3>
+          <p>The focus of this week was academic writing. Academic writing needs to be evidence based, evaluative, structured and objective. In academic writing formality is essential, and making sure to avoid exclamations and emotive language is important. When referencing, we need to use APAv6 which structure is lastname, firstInitial., & lastname, firstInitial.(Year). Title.journalName, volume(issue), doi(if available)
+        </section>
+        <section>
+          <h3>Week 6</h3>
+          <p>We got introduced to html (hypertext markup language) this week. The typical layout for a html document is:
+          <img src="images/template_code.png" alt="image of HTML5 template" id="temp-pic">
+          <p>We can use winSCP to upload files to our virtual machine, and therefore host our sites. The commands in the secure shell to do that are:
+          <p><code>cd folder name 	&#9166;</code>
+          <p><code>Http-server</code>
+          <p>Then the site can be accessed by using the IP address of the VM
+          <p>The best site to go to to learn various aspects of html coding is the <a href="http://developer.mozilla.org/">mozilla developer</a> website.
+        </section>
+        <section>
+          <h3>Week 7</h3>
+          <p>In week 7 we submitted our literature reviews so did not learn any new content.
+          <p>In this week I looked into the differences between HTML5 and HTLM4. I found that HTML5 has included new elements, which used to be used be java-script based hacks in HTML4, directly into the language, for example the <code>&lt;canvas&gt;</code> and <code>&lt;video&gt;</code> tags. Also elements like <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> have been included so that less <code>&lt;div&gt;</code> tags are necessary.
+        </section>
+        <section>
+          <h3>Week 8</h3>
+          <p>Cascading Style Sheets(CSS) are used for styling websites, and should be saved in an external file so that it can be imported into multiple pages without having redundant code.
+          <p>An exmple of styling:
+          <pre>     p{
+            Background: red;
+            color: white;
+          }</pre>
+          <p>CSS3 also alows for some basic animaton through transitions and transforms, and includes selectors like <code>:hover</code> which applies a certain style when an element is hovered over
+          <p>This was demonstrated in the lecture where there was a demonstration on how to make the star wars opening using html and css formatting. The main thing I discovered this week is that I should probably make sure I watch all the star wars films in order to feel like a true computer science student.
+        </section>
+        <section>
+          <h3>Week 9</h3>
+          <p>The focus of this week was ensuring we were using our IDE’s effectively. It was recommended to use Atom.io to edit html and css pages. There are many packages and libraries available to customise the environment and make it more efficient.
+          <p>One of the most useful packages is the multi-cursor one, which allows editing of multiple lines at the same time. This is particularly useful when adding markup to large bodies of text, e.g making sure there is the <p> before every paragraph. Another useful one was the preview package which has a live preview next to the code you edit, to allow you to view what the html page will look like
+        </section>
+        <section>
+          <h3>Week 10</h3>
+          <p>This week's focus was on using images. There were many concepts learnt this week to effectively style images in a html page. The <code>img</code> element is the most effective way of including a picture in the site. To do this you do <code> &lt;img src="..." alt="..."&gt;</code>. The alt tag is necessary for every image as it gives a text description of what an image is, this is useful for accessibility purposes as it allows a screen reader to describe the image.
+          <p>Also learnt that you can use the <code>code</code> tag to change sections of text into a code font.
+          <p>You can change the height and width inside the img tag, but it is better to have that referenced in the style sheet than to do it directly in the element. And the key thing learnt this week was <strong>DO NOT USE THE STYLE ATTRIBUTE</strong>. If individual images need to be styled they can be referenced with ID selectors in css stylesheet. And to style multiple at the same time, we can use classes to reference them.
+          <p>*include things about changing style on hover, have a picture with external style sheet for just this page*
+          <p>There are also advanced css selectors that cn be used to style elements if certain conditions are met. Examples below:
+            <p id="demotarget"><code>:target</code> changes elements if that element is <a href="#demotarget">targeted</a>
+            <p id="demohover"><code>:hover</code> changes elements if it is hovered over
+            <p id="demoactive"><code>:active</code> changes elements if it is selected
+
+          <p>Figure can be used to contain an image and a <code>figcaption</code> like shown below
+          <figure>
+            <img src="images/link.png" alt="Concept art of link">
+            <figcaption> This is official <a href="http://nintendo.co.uk" target="_blank">nintendo</a> concept art for the character link from breath of the wild. I highly recommend this game</figcaption>
+            </figure>
+
+        </section>
+
+    </article>
+    <article id = "validation">
+      <h2>Validation</h2>
+      <p>These links take you to the W3 HTML and CSS validation pages
+      <p><a href="https://validator.w3.org/check/referer" target="_blank">HTML validation</a>
+      <p><a href="http://jigsaw.w3.org/css-validator/check/referer" target="blank">CSS validation</a>
+        <ul class="center">
+          <li class="dnav"><a href="dlog1.html" class="hidden">&#9664;Week 1-11</a></li>
+          <li class="dnav"><a href="dlog.html" class="show">Full Log</a></li>
+          <li class="dnav"><a href="dlog2.html" class="show">Week 11-20&#9654;</a></li>
+        </ul>
+        <ul class="mob">
+          <li class="dnav"><a href="dlog1.html" aria-label="Back to weeks 1 to 10" class="hidden">&#9664;</a></li>
+          <li class="dnav"><a href="dlog.html" class="show" aria-label="Show full discovery log">Full</a></li>
+          <li class="dnav"><a href="dlog2.html" class="show" aria-label="Forward to weeks 11 to 20">&#9654;</a></li>
+        </ul>
+    </article>
+
+
+  </main>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <footer>
+    <p id="left-foot"><img src="images/uop.svg" alt="university of portsmout logo" id="footer-logo">UP878976
+  </footer>
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("topBtn").style.display = "block";
+      } else {
+          document.getElementById("topBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+</body>

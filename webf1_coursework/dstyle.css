@@ -1,0 +1,109 @@
+#heartpic{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+#svgpic{
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+article .dnav{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+
+}
+img{
+  margin:0 auto;
+  max-width: 90vw;
+}
+
+.center{
+  text-align: center;
+  /* width: 100%; */
+
+}
+a.hidden{
+  visibility: hidden;
+  color: #F7F3F5;
+  background: #D54834;
+  margin: 0 1%;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+a.show{
+  color: #F7F3F5;
+  background: #D54834;
+  margin: 0 1%;
+  padding: 8px 16px;
+  text-decoration: none;
+  }
+a.show:hover{
+  background-color: #85C8D1;
+}
+
+a.show a{
+  display: inline-block;
+  float:left;
+  /* width: 33%; */
+  text-align: center;
+  text-decoration: none;
+
+}
+
+#fulllog{
+  text-align: center;
+}
+article{
+  margin: 0 auto;
+  background-color: #F7F3F5;
+  padding: 0.1em 1em;
+  max-width: 68em;
+}
+.mob{
+  display: none;
+}
+
+figure {
+    max-width: 400px;
+    padding: 1em;
+    border: thin #85C8D1 solid;
+    margin: 0 auto;
+
+}
+figure img{
+  margin: 0 auto;
+  max-width:360px;
+}
+
+#demohover:hover{
+  background-color: #85C8D1;
+  color:#F7F3F5;
+}
+#demotarget:target{
+  background-color: #85C8D1;
+  color:#F7F3F5;
+}
+#demoactive:active{
+  background-color: #85C8D1;
+  color:#F7F3F5;
+}
+@media screen and (max-width : 700px), screen and (orientation:portrait){
+  .center{
+    display: none;
+  }
+  .mob{
+    display:inline-block;
+    text-align: center;
+
+  }
+  .mob .show{
+    margin: 0 20%;
+  }
+  figure img{
+    margin: 0 auto;
+    max-width:80vw;
+  }
+
+}

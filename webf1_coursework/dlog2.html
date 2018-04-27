@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discovery Log</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dstyle.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#" role="button" class="show-menu" id="show-menu">&#9776; Menu</a>
+      <ul id="menu">
+        <li><a href="./index.html">Home</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li>
+            <a href="dlog.html">&#9660; Discovery Log</a>
+            <ul class="hidden">
+                <li><a href="dlog1.html">Week 1-10</a></li>
+                <li><a href="dlog2.html">Week 11-20</a></li>
+            </ul>
+        </li>
+        <li><a href="litreview.html">Literature Review</a></li>
+        <li><a href="#validation">Validation</a></li>
+      </ul>
+    </nav>
+    <h1> Web Foundations 1</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Discovery Log</h2>
+      <p id="fulllog"><a href="dlog.html">Click to go to full discovery log</a>
+        <section>
+          <h3>Week 11</h3>
+          <p>This week our lecture consisted of making an advent calendar, using html css and javascript.  The css used was complex as it included transitions for the doors of the advent calendars. The <code>@keyframes</code> selector specifies the animation to be carried out. So in an element it would sat <code>animation:ftwo 30s infinite;</code> or something along those lines.
+          <p>In this week I also continued to complete the work on images from the previous weeks. I experimented with changing the size of images based on the size of the page. As shown below:</p>
+          <picture>
+            <source media="(min-width: 800px)" srcset="images/bigheart.png">
+            <source media="(min-width: 500px)" srcset="images/mediumheart.jpg">
+            <img id="heartpic" src="images/smallheart.gif" alt = "kpop group member doing hearts at camera">
+          </picture>
+          <p>This is done using the <code>picture</code> element which creates responsive images. The <code>media</code> attribute specifies what should be done if a page meets a certain criteria. The <code>@media</code> selector can be used to style a page based on the size of the page as well. This is particularly useful for styling specifically for mobile sites.
+          <p>You can have multiple sources so that a browser can use its prefered file type for the image and you can also use <code>srcset </code> to add different file types for images based on resolution.
+          <p>The lasagne picture below supports multiple file types</p>
+            <picture>
+              <source type="image/svg+xml" srcset="images/lasagne.svg">
+              <source type="image/jpg" srcset="images/lasagne.jpg" >
+              <source type="image/png" srcset="images/lasagne.png" >
+              <img src="images/lasagne.gif" alt="Succulent Lasagne" >
+            </picture>
+
+
+        </section>
+        <section>
+          <h3>Week 12</h3>
+          <p>This week was the week the mark scheme for this website was released, so most of this week was spent planning how to go about making the website. In the practicals we looked more into using MDN to find the standards for writing good html and css. Using semantic elements is a key feature. It is more effective to use <code>&lt;main&gt;</code> than it is to use <code>&lt;div id = “main”&gt;</code>  or using <code>&lt;article&gt;</code> instead of grouping text under the <code>&lt;div id=”text”&gt;</code>. This allows for better styling and is easier for screen readers to decipher.
+          <p>Validation was also introduced. Using the w3 validator it is possible to check whether the code for html and css is written correctly. It can detect errors so can ensure that the site is properly marked up in html5. Validation links for this site are at the <a href=”#validation” > bottom</a>
+        </section>
+        <section>
+          <h3>Week 13</h3>
+          <p>Addressing the web was the topic of this week. URLS and hyperlinks were discussed, as well as using anchor tags to place links in HTML. Links can be both to external sites, e.g linking to the bbc website, or they can also be internal. This means that they are links to html files inside the folder directories.
+          <p>Some key things to remember when naming files are: use all lower case, do not use spaces. Make sure the file type is correct.
+          <p>Also to navigate through folder directories use<code> /folder/subfolder/file.html</code>. Using /./ changes the location in the folder to the above folder. For example if on the <code>file.html</code> and wanting to link to a picture in the “folder” folder, the path would be <code>/./file.css</code>
+
+        </section>
+        <section>
+          <h3>Week 14</h3>
+          <p>This week we focused on usability. Usability is ensuring that a site is easy for everyone to use, essentially making the user interface easy to understand and smooth. It is key to think about the user demographics when designing a site.
+          <p>We were told about the usability engineering process which is the process involved to make sure the site is usable. This is a cycle between design implementation and evaluation.
+          <p>The key thing I learnt was that it is best not to be too experimental with site design, ensuring that the site is easy to use an follows the structures that people are most used to is the best way to have good usability on a site.
+
+        </section>
+        <section>
+          <h3>Week 15</h3>
+          <p>The topic this week was accessibility. Accessibility and usability can get confused, but essentially if a site is accessible it is also usable. It is important to make sure a site is accessible because otherwise it is technically breaking the law. Simple ways to ensure accessibility are alt tags on pictures, aria labels  and tab indexing to make things clearer for screen readers, and transcripts on videos. <a href=”http://www.w3.org/WAI/”>http://www.w3.org/WAI/</a>is the best site to look at to ensure accessibility.
+        </section>
+        <section>
+          <h3>Week 16</h3>
+          <p>This week we looked at scalable vector graphics (SVG). Images often reduce in quality when they are sized larger than the original image, dues to pixel by pixel definitions. This also means that the bigger the image the larger the file size. SVG images however use vectors to mathematically calculate how an image should appear, this means that an image which has been scales up or down in size would take up the same amount of memory.
+          <p>Here is an example of an SVG picture:
+          <p><img src = "images/uop.svg" id="svgpic" alt = "university of portsmouth logo">
+          <p>This is the same picture that is at the footer of this page, yet it still has the same quality.
+
+        </section>
+        <section>
+          <h3>Week 17</h3>
+          <p>This week we looked at some basic javascript.
+          <p>I focused on being able to add a transcript to the video found on the homepage. To do a transcript <code>.vtt</code> files are used. It is also possible to use <code>.srt</code> file but it does not include as many customisation options and can also be more complicated to write.</p>
+          <img src="images/vttcapture.PNG" alt="example of a vtt file">
+          <p>The time start, time finish and the content of the caption for that duration are all that is needed for a vtt file.
+          <p>To implement that with the video, the <code>&lt;track&gt;</code> tag is used in the <code>video</code> element.
+        </section>
+    </article>
+    <article id = "validation">
+      <h2>Validation</h2>
+      <p>These links take you to the W3 HTML and CSS validation pages
+      <p><a href="https://validator.w3.org/check/referer" target="_blank">HTML validation</a>
+      <p><a href="http://jigsaw.w3.org/css-validator/check/referer" target="blank">CSS validation</a>
+        <ul class="center">
+          <li class="dnav"><a href="dlog1.html" class="show">&#9664;Week 1-11</a></li>
+          <li class="dnav"><a href="dlog.html" class="show">Full Log</a></li>
+          <li class="dnav"><a href="dlog2.html" class="hidden">Week 11-20&#9654;</a></li>
+        </ul>
+        <ul class="mob">
+          <li class="dnav"><a href="dlog1.html" class="show" aria-label="back to weeks 1 to 10">&#9664;</a></li>
+          <li class="dnav"><a href="dlog.html" class="show" aria-label="Show full discovery log">Full</a></li>
+          <li class="dnav"><a href="dlog2.html" class="hidden" aria-label="forward to weeks 11 to 20">&#9654;</a></li>
+        </ul>
+    </article>
+
+  </main>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <footer>
+    <p id="left-foot"><img src="images/uop.svg" alt="university of portsmout logo" id="footer-logo">UP878976
+  </footer>
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("topBtn").style.display = "block";
+      } else {
+          document.getElementById("topBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+  </body>
